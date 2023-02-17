@@ -27,6 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
    
+    - run: chmod +x frontend.sh
     - run: ./frontend.sh
     
     
