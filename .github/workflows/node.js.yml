@@ -31,6 +31,11 @@ jobs:
     - run: ./buildFrontend.sh
     - run: chmod +x buildBackend.sh
     - run: ./buildBackend.sh
+    - run: chmod +x ./scanBackend.sh
+    - run: ./scanBackend.sh
+    - run: chmod +x scanFrontend.sh
+    - run: ./scanFrontend.sh
+
 
 
     
