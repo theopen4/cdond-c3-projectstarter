@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: cd frontend
     - run: npm install
-    - run: npm run build
+    - run: npm start
     - run: cd frontend
     - run: npm install
     - run: npm run test
