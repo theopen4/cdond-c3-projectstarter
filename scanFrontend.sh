@@ -1,3 +1,3 @@
 cd frontend
 npm install
-npm audit --audit-level=critical
+npm audit fix --audit-level=critical --force
