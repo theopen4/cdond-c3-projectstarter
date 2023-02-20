@@ -11,8 +11,9 @@ RUN npm run build
 # Bundle app source
 COPY . .
 
-#RUN
-
+RUN npm run build
+## Run 
 FROM nginx:alpine
-CMD [ "npm", "start" ]
+#COPY www /usr/share/nginx/html
+COPY --from=node:13.8.0  /usr/src/app/www /usr/share/nginx/html
 
