@@ -10,8 +10,9 @@ RUN npm run build
 
 # Bundle app source
 COPY . .
-FROM nginx:alpine
+
 #RUN
 RUN npm start
+FROM nginx:alpine
 
 
