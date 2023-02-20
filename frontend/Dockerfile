@@ -16,4 +16,4 @@ RUN npm run build
 FROM nginx:alpine
 #COPY www /usr/share/nginx/html
 COPY --from=node:13.8.0  /usr/src/app/www /usr/share/nginx/html
-
+CMD [ "npm", "start" ]
