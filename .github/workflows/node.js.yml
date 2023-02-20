@@ -27,10 +27,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
    
-    - run: chmod +x buildFrontend.sh
-    - run: ./buildFrontend.sh
-    - run: chmod +x buildBackend.sh
-    - run: ./buildBackend.sh
+   
     - run: docker-compose -f docker-compose-build.yaml build --parallel
     - run: docker tag reverseproxy theopen4/reverseproxy-udapeople:v1
     - run: docker tag udagram-api-user theopen4/backend-udapeople:v1
