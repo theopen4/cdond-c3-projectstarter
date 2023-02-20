@@ -12,7 +12,7 @@ RUN npm run build
 COPY . .
 
 #RUN
-RUN npm start
-FROM nginx:alpine
 
+FROM nginx:alpine
+CMD [ "npm", "start" ]
 
