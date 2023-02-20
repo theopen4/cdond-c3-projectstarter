@@ -10,5 +10,8 @@ RUN npm run build
 
 # Bundle app source
 COPY . .
-EXPOSE 8080
-CMD npm start
+FROM nginx:alpine
+#RUN
+RUN npm start
+
+
