@@ -1,14 +1,12 @@
 version: "3"
 services:
-  reverseproxy:
-    build:
-      context: ./reverseproxy-udapeople
-    image: reverseproxy-udapeople
-  backend_user:
+  backend-udapeople:
     build:
       context: ./backend
     image: backend-udapeople
-  frontend:
+  frontend-udapeople:
+    depends_on:
+      - backend-udapeople
     build:
       context: ./frontend
     image: frontend-udapeople

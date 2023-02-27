@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deploy
+  labels:
+    app: frontend-deploy
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend-deploy
+  template:
+    metadata:
+      labels:
+        app: frontend-deploy
+    spec:
+      containers:
+      - name: frontend-deploy
+        image: theopen4/frontend-udapeople:v1
+        ports:
+        - containerPort: 80
+           
