@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: theopen4/backend-udapeople:v3
+        image: theopen4/backend-udapeople:v4
         ports:
         - containerPort: 8080
         envFrom:  

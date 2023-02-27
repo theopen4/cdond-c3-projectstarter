@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend-deploy
-        image: theopen4/frontend-udapeople:v3
+        image: theopen4/frontend-udapeople:v4
         ports:
         - containerPort: 80
            
