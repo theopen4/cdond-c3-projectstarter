@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: theopen4/backend-udapeople:v4
+        image: theopen4/backend-udapeople:v5
         ports:
         - containerPort: 8080
         envFrom:  
@@ -24,4 +24,5 @@ spec:
               name: env-configmap
           - secretRef:
               name: env-secrets
+        
            
