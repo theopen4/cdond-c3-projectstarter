@@ -8,6 +8,5 @@ RUN npm install
 # Bundle app source
 COPY . .
 RUN npm run webpack
-RUN npm run start:hmr
 EXPOSE 8080
 CMD [ "npm", "run", "start" ]    
